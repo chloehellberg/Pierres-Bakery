@@ -8,6 +8,11 @@
 
 _This console application is for a bakery that includes the following funcitonality when the user runs the application:_
   * A welcome prompt with a message along with the cost of both Bread and Pastry options
+  * User will be able to specify how many loaves of Bread and how many Pastry items they'd like and the application will return the total cost of the order
+  * Additional functionality includes the following:
+    * Pierre offers the following deals - Bread is buy 2, get 1 free with a single loaf costing $5. And, Patry is Buy 1 for $2 or 3 for $5
+
+_All functionality is also tested for the models._
   
 
 ## Specs
@@ -16,10 +21,12 @@ _This console application is for a bakery that includes the following funcitonal
 | :--- | :---- | :----- |
 
 
-| 1. Number becomes word (1-9) Int-->String. | 8 | "Eight"|
-| 2. Build DB, Database of numbers and corresponding word for each. | info | database
-| 3. At first for loop take string and look at each char and compare to dictionary | char | numberWord
-| 4. Repeat step 3, through the next loops until we've gone through entire string. Return the numberWord to user. | numberWord | report
+| 1. Create two classes: Bread and Pastry. | na | na |
+| 2. Build DB, Database of Item and corresponding price for each. | info | database
+| 3. Build out CalculateCost Method with initial costs for Bread. | Bread: 1 | Cost: $5
+| 4. Add functionality in CalculateCost Method for initial cost of Pastry. | Pastry: 1 | Cost $2
+| 5. Add logic for Pierre's deals for Bread. Buy 2, get 1 free. | Bread: 3 | Cost: $10
+| 6. Add logic for Pierre's deals for Pastry. Buy 3 for $5 | Pastry: 3 | Cost: $5
 
 ## Setup/Installation Requirements
 
