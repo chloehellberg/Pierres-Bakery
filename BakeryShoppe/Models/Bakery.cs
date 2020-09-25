@@ -15,12 +15,17 @@ namespace Bakery.Models
     }
   }
 
-  // public class Pastry
-  // {
-  //   public static string CalculatePastry(int pastryAmount)
-  //   {
+  public class Pastry
+  {
+    public static int CalculatePastry(int pastryAmount)
+    {
 
-  //   }
+      // int calculatePastryDiscount = pastryAmount / 3;
+      int pastryTotalCost = pastryAmount * 2;
 
-  // }
+      return pastryTotalCost;
+
+    }
+
+  }
 }
