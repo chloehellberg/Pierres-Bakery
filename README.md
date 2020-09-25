@@ -11,6 +11,7 @@ _This console application is for a bakery that includes the following funcitonal
   * User will be able to specify how many loaves of Bread and how many Pastry items they'd like and the application will return the total cost of the order
   * Additional functionality includes the following:
     * Pierre offers the following deals - Bread is buy 2, get 1 free with a single loaf costing $5. And, Patry is Buy 1 for $2 or 3 for $5
+    * Two different bread choices added and the  user will be able to say how many loaves of each they would like
 
 _All functionality is also tested for the models._
   
@@ -21,12 +22,13 @@ _All functionality is also tested for the models._
 | :--- | :---- | :----- |
 
 
-| 1. Create two classes: Bread and Pastry. | data | cost |
+| 1. Create two classes: Bread and Pastry. | Item Amount | Cost of Each |
 | 2. ~~Build DB, Database of Item and corresponding price for each.~~ | info | database
 | 3. Build out CalculateBread Method with initial costs for Bread. | Bread: 1 | Cost: $5
 | 4. Add functionality in CalculatePastry Method for initial cost of Pastry. | Pastry: 1 | Cost $2
 | 5. Add logic for Pierre's deals for Bread. Buy 2, get 1 free. | Bread: 3 | Cost: $10
-| 6. Add logic for Pierre's deals for Pastry. Buy 3 for $5 | Pastry: 3 | Cost: $5
+| 6. Add logic for Pierre's deals for Pastry. Buy 3 for $5. | Pastry: 3 | Cost: $5
+| 7. Add additional UI for other fun options. 
 
 ## Setup/Installation Requirements
 
