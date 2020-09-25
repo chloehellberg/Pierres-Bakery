@@ -23,8 +23,8 @@ _All functionality is also tested for the models._
 
 | 1. Create two classes: Bread and Pastry. | na | na |
 | 2. Build DB, Database of Item and corresponding price for each. | info | database
-| 3. Build out CalculateCost Method with initial costs for Bread. | Bread: 1 | Cost: $5
-| 4. Add functionality in CalculateCost Method for initial cost of Pastry. | Pastry: 1 | Cost $2
+| 3. Build out CalculateBread Method with initial costs for Bread. | Bread: 1 | Cost: $5
+| 4. Add functionality in CalculatePastry Method for initial cost of Pastry. | Pastry: 1 | Cost $2
 | 5. Add logic for Pierre's deals for Bread. Buy 2, get 1 free. | Bread: 3 | Cost: $10
 | 6. Add logic for Pierre's deals for Pastry. Buy 3 for $5 | Pastry: 3 | Cost: $5
 
