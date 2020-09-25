@@ -5,16 +5,16 @@ namespace Bakery.Models
 {
   public class Bread
   {
-    public int breadAmount { get; set; }
+    public int totalBreadRequested { get; set; }
 
     public Bread(int breadOrdered)
     {
-      breadAmount = breadOrdered;
+      totalBreadRequested = breadOrdered;
     }
     public int CalculateBread()
     {
-      int calculateFreeBread = breadAmount / 3;
-      int breadTotalCost = (breadAmount - calculateFreeBread) * 5;
+      int calculateFreeBread = totalBreadRequested / 3;
+      int breadTotalCost = (totalBreadRequested - calculateFreeBread) * 5;
       
       return breadTotalCost;
     }

@@ -28,12 +28,12 @@ _All functionality is also tested for the models._
 | 4. Add functionality in CalculatePastry Method for initial cost of Pastry. | Pastry: 1 | Cost $2
 | 5. Add logic for Pierre's deals for Bread. Buy 2, get 1 free. | Bread: 3 | Cost: $10
 | 6. Add logic for Pierre's deals for Pastry. Buy 3 for $5. | Pastry: 3 | Cost: $5
-| 7. Add additional UI for other fun options. 
+| 7. Add additional UI for other fun options.
 
 ## Setup/Installation Requirements
 
 * _Download Option_
-  *  Download files from GitHub repository by click Code and Download Zip
+  * Download files from GitHub repository by click Code and Download Zip
   * Extract files into a single directory
   * Run GitBASH in directory
   * Type "dotnet restore" to get bin and obj files
