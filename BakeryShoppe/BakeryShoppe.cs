@@ -21,12 +21,13 @@ namespace BakeryShoppe
         string pastryAmountRequested = Console.ReadLine();
         int pastryAmount = int.Parse(pastryAmountRequested);
 
-        int totalCost = Bread.CalculateBread(breadAmount) + Pastry.CalculatePastry(pastryAmount);
+        Bread breadOrder = new Bread(breadAmount);
+        Pastry pastryOrder = new Pastry(pastryAmount);
+        int totalCost = breadOrder.CalculateBread() + pastryOrder.CalculatePastry();
 
         Console.WriteLine("Thank you for your purchases. Your total today will be $" + totalCost);
+        Console.WriteLine("Have a nice day, and come again!");
 
-        // Console.WriteLine("Thank you for your purchases. Your total today for bread will be: $" + Bread.CalculateBread(breadAmount));
-        // Console.WriteLine("Thank you for your purchases. Your total today for pastries will be: $" + Pastry.CalculatePastry(pastryAmount));
       }
       else
       {

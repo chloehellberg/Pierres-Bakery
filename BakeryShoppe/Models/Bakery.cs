@@ -5,7 +5,13 @@ namespace Bakery.Models
 {
   public class Bread
   {
-    public static int CalculateBread(int breadAmount)
+    public int breadAmount { get; set; }
+
+    public Bread(int breadOrdered)
+    {
+      breadAmount = breadOrdered;
+    }
+    public int CalculateBread()
     {
       int calculateFreeBread = breadAmount / 3;
       int breadTotalCost = (breadAmount - calculateFreeBread) * 5;
@@ -16,7 +22,13 @@ namespace Bakery.Models
 
   public class Pastry
   {
-    public static int CalculatePastry(int pastryAmount)
+    public int pastryAmount { get; set; }
+
+    public Pastry(int pastryOrdered)
+    {
+      pastryAmount = pastryOrdered;
+    }
+    public int CalculatePastry()
     {
       int discountedPastries = pastryAmount / 3;
       int pastryTotalCost = (pastryAmount * 2) - discountedPastries;
