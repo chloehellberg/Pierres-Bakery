@@ -13,11 +13,13 @@ namespace BakeryShoppe
       if (userToShopInput == "y")
       {
         Console.WriteLine("How many loaves of bread would you like today?");
-        string breadAmount = Console.ReadLine();
+        string breadAmountRequested = Console.ReadLine();
+        int breadAmount = int.Parse(breadAmountRequested);
 
       
         Console.WriteLine("Very good. And would you like to purchase any pastries? Please enter the amount you would like.");
-        string pastryAmount = Console.ReadLine();
+        string pastryAmountRequested = Console.ReadLine();
+        int pastryAmount = int.Parse(pastryAmountRequested);
 
         Console.WriteLine("Thank you for your purchases. Your total today will be: ");
       }

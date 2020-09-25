@@ -7,7 +7,7 @@ namespace Bakery.Tests
   public class BreadTests
   {
     [TestMethod]
-    public void CalculateCost_CalculateCostOfBreadItems_Cost()
+    public void CalculateBread_CalculateCostOfBreadItems_Cost()
     {
       Assert.AreEqual("5", Bread.CalculateCost("1"));
     }
@@ -16,7 +16,7 @@ namespace Bakery.Tests
   public class PastryTests
   {
     [TestMethod]
-    public void CalculateCost_CalculateCostOfPastryItems_Cost()
+    public void CalculatePastry_CalculateCostOfPastryItems_Cost()
     {
       Assert.AreEqual("2", Pastry.CalculateCost("1"));
     }
