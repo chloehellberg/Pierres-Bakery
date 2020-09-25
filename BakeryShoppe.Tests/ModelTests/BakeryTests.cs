@@ -33,5 +33,11 @@ namespace Bakery.Tests
     {
       Assert.AreEqual(2, Pastry.CalculatePastry(1));
     }
+
+    [TestMethod]
+    public void CalculatePastry_CalculateCostOfMultiplePastires_Cost()
+    {
+      Assert.AreEqual(5, Pastry.CalculatePastry(3));
+    }
   }
 }

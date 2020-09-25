@@ -7,7 +7,6 @@ namespace Bakery.Models
   {
     public static int CalculateBread(int breadAmount)
     {
-
       int calculateFreeBread = breadAmount / 3;
       int breadTotalCost = (breadAmount - calculateFreeBread) * 5;
       
@@ -19,13 +18,10 @@ namespace Bakery.Models
   {
     public static int CalculatePastry(int pastryAmount)
     {
-
-      // int calculatePastryDiscount = pastryAmount / 3;
-      int pastryTotalCost = pastryAmount * 2;
+      int discountedPastries = pastryAmount / 3;
+      int pastryTotalCost = (pastryAmount * 2) - discountedPastries;
 
       return pastryTotalCost;
-
     }
-
   }
 }
