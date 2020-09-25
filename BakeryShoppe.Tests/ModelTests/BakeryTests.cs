@@ -9,17 +9,17 @@ namespace Bakery.Tests
     [TestMethod]
     public void CalculateBread_CalculateCostOfBreadItems_Cost()
     {
-      Assert.AreEqual("5", Bread.CalculateCost("1"));
+      Assert.AreEqual("$5", Bread.CalculateBread(1));
     }
   }
 
-  public class PastryTests
-  {
-    [TestMethod]
-    public void CalculatePastry_CalculateCostOfPastryItems_Cost()
-    {
-      Assert.AreEqual("2", Pastry.CalculateCost("1"));
-    }
-  }
+  // public class PastryTests
+  // {
+  //   [TestMethod]
+  //   public void CalculatePastry_CalculateCostOfPastryItems_Cost()
+  //   {
+  //     Assert.AreEqual("2", Pastry.CalculatePastry("1"));
+  //   }
+  // }
 
 }
