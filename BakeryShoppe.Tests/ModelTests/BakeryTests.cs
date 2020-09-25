@@ -9,19 +9,22 @@ namespace Bakery.Tests
     [TestMethod]
     public void CalculateBread_CalculateCostOfOneBreadItem_Cost()
     {
-      Assert.AreEqual(5, Bread.CalculateBread(1));
+      Bread breadOrder = new Bread(1);
+      Assert.AreEqual(5, breadOrder.CalculateBread());
     }
 
     [TestMethod]
     public void CalculateBread_CalculateCostOfTwoBreadItems_Cost()
     {
-      Assert.AreEqual(10, Bread.CalculateBread(2));
+      Bread breadOrder = new Bread(2);
+      Assert.AreEqual(10, breadOrder.CalculateBread());
     }
 
     [TestMethod]
     public void CalculateBread_CalculateCostOfManyBreadItems_Cost()
     {
-      Assert.AreEqual(30, Bread.CalculateBread(9));
+      Bread breadOrder = new Bread(9);
+      Assert.AreEqual(30, breadOrder.CalculateBread());
     }
   }
 
@@ -31,13 +34,15 @@ namespace Bakery.Tests
     [TestMethod]
     public void CalculatePastry_CalculateCostOfPastryItems_Cost()
     {
-      Assert.AreEqual(2, Pastry.CalculatePastry(1));
+      Pastry pastryOrder = new Pastry(1);
+      Assert.AreEqual(2, pastryOrder.CalculatePastry());
     }
 
     [TestMethod]
     public void CalculatePastry_CalculateCostOfMultiplePastires_Cost()
     {
-      Assert.AreEqual(5, Pastry.CalculatePastry(3));
+      Pastry pastryOrder = new Pastry(3);
+      Assert.AreEqual(5, pastryOrder.CalculatePastry());
     }
   }
 }
