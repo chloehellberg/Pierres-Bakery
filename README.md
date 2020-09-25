@@ -19,9 +19,7 @@ _All functionality is also tested for the models._
 ## Specs
 
 | Spec | Input | Output |
-| :--- | :---- | :----- |
-
-
+| :---------------------------- | :------------- | :------------ |
 | 1. Create two classes: Bread and Pastry. | Item Amount | Cost of Each |
 | 2. Build DB, Database of Item and corresponding price for each. | info | database
 | 3. Build out CalculateBread Method with initial costs for Bread. | Bread: 1 | Cost: $5
