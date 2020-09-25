@@ -6,14 +6,21 @@ namespace Bakery.Models
   {
     public static string CalculateBread(int breadAmount)
     {
-      Dictionary <int, string> cost = new Dictionary<int, string>(){
+      Dictionary <int, string> costs = new Dictionary<int, string>(){
         { 1, "$5" }, 
         { 2, "$10" }, 
         { 3, "$10" }
       };
 
-      string breadTotalCost = "null";
-
+      string breadTotalCost = "0";
+      
+      foreach(KeyValuePair<int, string> cost in costs)
+      {
+        if (cost.Key == 1)
+        {
+          breadTotalCost = cost.Value;
+        }
+      }
 
       return breadTotalCost;
     }
