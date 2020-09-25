@@ -20,6 +20,14 @@ namespace Bakery.Models
         {
           breadTotalCost = cost.Value;
         }
+        else if (cost.Key == 2)
+        {
+          breadTotalCost = cost.Value;
+        }
+        else
+        {
+          breadTotalCost = cost.Value;
+        }
       }
 
       return breadTotalCost;

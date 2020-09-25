@@ -21,7 +21,8 @@ namespace BakeryShoppe
         string pastryAmountRequested = Console.ReadLine();
         int pastryAmount = int.Parse(pastryAmountRequested);
 
-        Console.WriteLine("Thank you for your purchases. Your total today will be: ");
+        Console.WriteLine("Thank you for your purchases. Your total today will be: " + Bread.CalculateBread(breadAmount));
+    
       }
       else
       {

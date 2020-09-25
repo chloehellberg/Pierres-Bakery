@@ -7,10 +7,16 @@ namespace Bakery.Tests
   public class BreadTests
   {
     [TestMethod]
-    public void CalculateBread_CalculateCostOfBreadItems_Cost()
+    public void CalculateBread_CalculateCostOfOneBreadItem_Cost()
     {
-      Assert.AreEqual("$5", Bread.CalculateBread(1));
+      Assert.AreEqual("$10", Bread.CalculateBread(3));
     }
+
+    // [TestMethod]
+    // public void CalculateBread_CalculateCostOfTwoBreadItems_Cost()
+    //   {
+    //     Assert.AreEqual("$10", Bread.CalculateBread(2));
+    //   }
   }
 
   // public class PastryTests
